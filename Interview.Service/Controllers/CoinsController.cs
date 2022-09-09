@@ -22,6 +22,17 @@ namespace Coins.Service.Controllers
 				}
 			});
 		}
+
+		// Add code here to get a coin values for a currency with url
+		// http://localhost:5063/api/coins/<<currency>>
+
+
+
+		// Add code here to get a list of available currencies with url
+		// http://localhost:5063/api/currencies
+
+
+
 	}
 
 	public class Coin
