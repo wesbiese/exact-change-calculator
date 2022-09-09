@@ -8,7 +8,7 @@ import ExactChangeList from "./ui-components/ExactChangeList"
 import Form from "./ui-components/Form"
 import NumCoinsField from "./ui-components/NumCoinsField"
 
-import calcMinCoins from "./calcMinCoins"
+import useCalcMinCoins from "./useCalcMinCoins"
 import useGetCoins from "./useGetCoins"
 
 /**
@@ -26,7 +26,7 @@ export default function App() {
 	const symbol = coins.symbol
 
 	// Calculate the minimum coins for a given lists of coin values and dollar amount
-	const minCoins = calcMinCoins(coinValues, amount)
+	const minCoins = useCalcMinCoins(amount)
 	const coinCount = minCoins.coinCount
 	const exactChange = minCoins.exactChange
 
